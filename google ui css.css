@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter';font-size: 14px;
+}
+.content{
+    margin-top: 150px;
+}
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+/*navigatio area*/
+nav ul{
+    display: flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    margin: 20px 15px 0;
+    font-size: 13px;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    text-transform: capitalize;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.nav-right{
+    margin-left:auto;
+}
+
+.sign-in-button{
+    background-color: rgb(43, 55, 83);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.box-grid{
+    display: grid;
+    grid-template-columns: 5px 5px 5px;
+    grid-template-rows: 5px 5px 5px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+.box-item{
+    background-color: black;
+    align-items:first baseline;
+}
+.google-function{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.google-name{
+    font-size: 80px;
+    font-weight: bold;
+
+}
+.google-name:nth-child(1){
+    color: #4285f4;;
+    text-transform: capitalize;
+}
+.google-name:nth-child(2){
+    color:#DB4437;
+}
+.google-name:nth-child(3){
+    color:#F4B400;
+}
+.google-name:nth-child(4){
+    color: #4285f4;;
+}
+.google-name:nth-child(5){
+    color:#0f9d58;
+}
+.google-name:nth-child(6){
+    color:#DB4437;
+}
+
+.main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main .g-input{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+
+}
+.main .g-input .query{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+.main .g-input .icon{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    /*padding-bottom: 50px;*/
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+.search-b{
+    border:none;
+    color: white;
+    background-color: #f8f9fa !important;
+}
+.g-button:hover{
+    cursor: pointer !important;
+}
+.gBtn{
+    height: 36px;
+    min-width: 54px;
+    padding: 0 16px;
+    line-height: 27px;
+    text-align: center;
+    font-size: 14px;
+    margin: 11px 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    color: #202124;
+    background-color: #f8f9fa !important;
+    border: 1px solid #dadce0 !important;
+}
+.gBtn:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.languages{
+    display: inline-flex;
+}
+.languages ul{
+    display: flex;
+    position: relative;
+    right: 20px;
+    list-style: none;
+    color: #3c4043;;
+}
+.languagesInList a{
+    padding-right: 8px;
+    text-decoration: none;
+    color: #1a0dab;
+}
+.languagesInList a:hover{
+    padding-right: 8px;
+    text-decoration: none;
+    color: #1a0dab;
+}
+.langText{
+    color: gray;
+    padding-right: 20px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, 0.59);
+
+}
+
+.footer-place{
+    border-bottom: 1px solid #dadce0;
+    padding: 10px 0 10px 20px;
+}
+.footer-detail{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0 10px 20px;
+}
+footer li{
+    list-style-type: none;
+    margin: 0 20px 0 0;
+}
+.footer-detail li a{
+    color: rgba(0,0,0,0.54);
+    text-decoration: none;
+}
+.footer-detail li a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:650px) {
+    .footer-detail{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        justify-content: center;
+    }
+} 
